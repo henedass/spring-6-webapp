@@ -10,14 +10,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 @Component
-public class bootstrapdata implements CommandLineRunner {
+public class Bootstrapdata implements CommandLineRunner {
 
     private final AuthorRepository authorRepository;
     private final BookRepository bookRepository;
 
     private final PublisherRepository publisherRepository;
 
-    public bootstrapdata(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
+    public Bootstrapdata(AuthorRepository authorRepository, BookRepository bookRepository, PublisherRepository publisherRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
         this.publisherRepository = publisherRepository;
